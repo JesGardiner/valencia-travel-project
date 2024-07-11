@@ -10,12 +10,17 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+   grid-gap: 64px;
+}
+
+.img-responsive {
+  max-width: 100%;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 80px 0;
 }
 
 header {
@@ -33,6 +38,7 @@ header h1 {
   font-size: 96px;
   line-height: 1;
   margin: 30px 0;
+  font-family: Abril Fatface; 
 }
 
 header h2 {
@@ -63,6 +69,14 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   background: white;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 @media (max-width: 900px) {
